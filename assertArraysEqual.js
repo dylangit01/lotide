@@ -3,7 +3,7 @@ const eqArrays = (arr1, arr2) => {
   let outcome = true;
   arr1.forEach((item, i) => {
     if (item !== arr2[i]) {
-      return (outcome = false);
+      return outcome = false;
     }
   });
   return outcome;
