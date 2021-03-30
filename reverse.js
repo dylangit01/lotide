@@ -1,16 +1,15 @@
+const args = process.argv.slice(2);
+console.log(args);
+const reverse = () => {
+  args.forEach((word) => {
+    let l = 0, r = word.length - 1;
+    let rev = '';
+    while (l <= r) {
+      rev += word[r];
+      r--;
+    }
+    console.log(rev);
+  });
+};
 
-const reverse = input => {
-	if (input === undefined) return '';
-	let reversed = ''
-	let str = input.toString()
-	for (let i = str.length - 1; i >= 0; i--){
-		reversed += str[i]
-	}
-	return reversed
-}
-
-console.log(reverse('goodbye'));
-console.log(reverse(1));
-console.log(reverse('fish'));
-console.log(reverse(''));
-
+console.log(reverse());
