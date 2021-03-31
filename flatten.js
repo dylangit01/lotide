@@ -17,15 +17,25 @@ const assertArraysEqual = function(arr1, arr2) {
 };
 
 const flatten = (nestedArr) => {
-  let flattenArr = nestedArr.join(',').split(',');
+  // let flattenArr = nestedArr.join(',').split(',');
+  // console.log(flattenArr);
 
-  return flattenArr.map(c => {
-    let num = parseInt(c);
-    if (!isNaN(num)) {
-      return	c = parseInt(c);
-    } else return c;
-  });
-
+  // return flattenArr.map(c => {
+  //   if (!isNaN(parseInt(c))) {
+  //     return (c = parseInt(c));
+  //   } else return c;
+  // });
+  let arr = [];
+  for (const a of nestedArr) {
+    if (Array.isArray(a)) {
+      const c = flatten(a);
+      console.log(c);
+      arr = arr.concat(c)
+    } else {
+      arr.push(a)
+    }
+  }
+  return arr
   // forEach() method:
   // let outcome = [];
   // flattenArr.forEach((c) => {
@@ -38,5 +48,9 @@ const flatten = (nestedArr) => {
   // return outcome;
 };
 
-console.log(flatten([1, 2, [3, 4], 5, [6], [[[3, 4, 6]]]]));
-console.log(flatten(['a', 'b', ['c', 'd', 'e', [['dsafefae']]], [1, 2, 3]]));
+// flatten([1, 2, [3, 4], 5, [6]]);
+console.log(flatten([1, 2, [3, 4], 5, [6], [[[3, 4, 6]]]])); 
+// console.log(flatten(['a', 'b', ['c', 'd', 'e', [['dsafefae']]], [1, 2, 3]]));
+
+
+
