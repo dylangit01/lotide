@@ -29,7 +29,6 @@ const flatten = (nestedArr) => {
   for (const a of nestedArr) {
     if (Array.isArray(a)) {
       const c = flatten(a);
-      console.log(c);
       arr = arr.concat(c)
     } else {
       arr.push(a)
@@ -50,7 +49,7 @@ const flatten = (nestedArr) => {
 
 // flatten([1, 2, [3, 4], 5, [6]]);
 console.log(flatten([1, 2, [3, 4], 5, [6], [[[3, 4, 6]]]])); 
-// console.log(flatten(['a', 'b', ['c', 'd', 'e', [['dsafefae']]], [1, 2, 3]]));
+console.log(flatten(['a', 'b', ['c', 'd', 'e', [['dsafefae']]], [1, 2, 3]]));
 
 
 
