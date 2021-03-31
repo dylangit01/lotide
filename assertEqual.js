@@ -1,8 +1,8 @@
 // FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
+const assertEqual = function (actual, expected) {
   if (actual !== expected) {
-    console.log(`🔴🔴🔴 ${actual} and ${expected} are not equal`);
-  } else console.log(`🟢🟢🟢 ${actual} and ${expected} are equal`);
+    console.log(`🔴🔴🔴 ${actual} !== ${expected}`);
+  } else console.log(`🟢🟢🟢 ${actual} === ${expected}`);
 };
 
 // TEST CODE
