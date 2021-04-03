@@ -19,7 +19,7 @@ const eqArrays = (arr1, arr2) => {
 
 	for (let i = 0; i < arr1.length; i++){
 		if (Array.isArray(arr1[i]) && (eqArrays(arr1[i], arr2[i]) === false)) {
-			
+			return false;
     }
 		if (arr1[i] !== arr2[i]) {
 			console.log(arr1[i], arr2[i]);
