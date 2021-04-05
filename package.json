@@ -2,7 +2,7 @@
   "name": "lotide",
   "version": "1.0.0",
   "description": "",
-  "main": "none",
+  "main": "",
   "directories": {
     "test": "test"
   },
