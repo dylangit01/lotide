@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@dylan_div/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the Lodash library.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/dylangit01/lotide.git"
   },
-  "author": "Dylan",
+  "author": "DylanDu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dylangit01/lotide/issues"
