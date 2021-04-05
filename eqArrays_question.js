@@ -23,7 +23,7 @@ const eqArrays = (arr1, arr2) => {
       if (!eqArrays(arr1[i], arr2[i])) {
         return false;
       }
-      // cannot use "else {return arr1[i] !== arr2[i]}" directly as it will not go through rest of elements once reutrn true or false
+      // cannot use "else {return arr1[i] !== arr2[i]}" directly as it will not go through looping rest of elements once reutrn true or false
       // cannot use "if(return arr1[i] !== arr2[i])" directly as cannot compare two arrays directly, has to loop over it
     } else if (arr1[i] !== arr2[i]) {
       return false;
