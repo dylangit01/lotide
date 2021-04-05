@@ -20,9 +20,9 @@ const flatten = (nestedArr) => {
 
 module.exports = flatten;
 
-flatten([1, 2, [3, 4], 5, [6]]);
-console.log(flatten([1, 2, [3, 4], 5, [6], [[[3, 4, 6]]]])); 
-console.log(flatten(['a', 'b', ['c', 'd', 'e', [['dsafefae']]], [1, 2, 3]]));
+// flatten([1, 2, [3, 4], 5, [6]]);
+// console.log(flatten([1, 2, [3, 4], 5, [6], [[[3, 4, 6]]]])); 
+// console.log(flatten(['a', 'b', ['c', 'd', 'e', [['dsafefae']]], [1, 2, 3]]));
 
 
 
