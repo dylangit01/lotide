@@ -4,7 +4,7 @@ const assertEqual = function (actual, expected) {
   } else console.log(`🟢🟢🟢 ${actual} === ${expected}`);
 };
 
-const findKeyByValue = (obj, value) => {
+module.exports = findKeyByValue = (obj, value) => {
 	for (let key in obj) {
 		if (obj[key] === value) {
 			return key;

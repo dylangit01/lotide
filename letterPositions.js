@@ -1,18 +1,4 @@
-const eqArrays = (arr1, arr2) => {
-  if (arr1.length !== arr2.length) return false;
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function (arr1, arr2) {
-  if (eqArrays(arr1, arr2) === true) {
-    console.log(`🟢🟢🟢 array:${arr1} and array:${arr2} are equal`);
-  } else console.log(`🔴🔴🔴 array:${arr1} and array:${arr2} are not equal`);
-};
+const assertArraysEqual = require('./assertArraysEqual');
 
 const letterPositions = function (sentence) {
 	let result = {};
@@ -29,6 +15,8 @@ const letterPositions = function (sentence) {
 	}
   return result;
 };
+
+module.exports = letterPositions;
 
 console.log(letterPositions('lighthouse in the house'));
 

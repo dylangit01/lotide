@@ -1,15 +1,14 @@
-
-const findKey = (obj, callback) => {
-	let keyName = ''
-	for (let key in obj) {
-		if (callback(obj[key])) {
-			keyName = key
-			break;
-		}
-	}
-	// console.log(keyName);
-	return keyName
-}
+module.exports = findKey = (obj, callback) => {
+  let keyName = '';
+  for (let key in obj) {
+    if (callback(obj[key])) {
+      keyName = key;
+      break;
+    }
+  }
+  // console.log(keyName);
+  return keyName;
+};
 
 console.log(
 findKey({
@@ -41,4 +40,4 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-assertEqual(res1, 'noma')
+// assertEqual(res1, 'noma')
