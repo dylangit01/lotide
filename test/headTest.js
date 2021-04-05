@@ -1,12 +1,12 @@
-// const assertEqual = require('../assertEqual');
-// const head = require('../head')
-
 const assert = require('chai').assert;
+const expect = require('chai').expect;
+
 const head = require('../head');
 
 describe('#head', () => {
-  it('returns 1 for [1, 2, 3]', () => {
-    assert.strictEqual(head([1, 2, 3]), 1);
+  it ('returns 1 for [1, 2, 3]', () => {
+		assert.strictEqual(head([1, 2, 3]), 1);
+		expect(head([1, 2, 3])).to.equal(1);
 	});
 	
  it("returns '5' for ['5']", () => {
